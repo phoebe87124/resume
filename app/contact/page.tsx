@@ -6,6 +6,7 @@ import {
 } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import Link from 'next/link'
+import BaseDecoTitle from '@/app/components/base-deco-title'
 
 export default function ContactPage () {
   const contactList = [
@@ -34,11 +35,10 @@ export default function ContactPage () {
   return (
     <div className="contact-page px-10 flex justify-center items-center w-full h-full">
       <div>
-        <div className="relative p-10 mb-28">
-          <div className="absolute bg-green-100/70 w-full h-full left-0 top-0 translate-3" />
-          <div className="absolute border border-lime-700/50 w-full h-full left-0 top-0 -translate-3" />
-          <h2 className="relative z-1 text-2xl font-bold text-center text-lime-800">如果您對我過去的專案經歷感興趣或想進一步了解履歷內容<br />歡迎隨時透過以下方式與我聯繫～</h2>
-        </div>
+        <BaseDecoTitle
+          className="mb-28"
+          content={'如果您對我過去的專案經歷感興趣或想進一步了解履歷內容\n歡迎隨時透過以下方式與我聯繫～'}
+        />
 
         <div className="flex justify-between">
           {
