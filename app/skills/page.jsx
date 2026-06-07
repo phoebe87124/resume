@@ -12,6 +12,7 @@ export default function SkillsPage() {
         'Vuex / Pinia',
         'Vuetify',
         'Sass / Scss',
+        'React / Nextjs',
         'SPA / SSR Architecture'
       ]
     },
