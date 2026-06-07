@@ -8,7 +8,6 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 export default function ContactPage () {
-  // 感謝您撥冗瀏覽我的作品與經歷。如果您對我的背景、專案經驗或未來合作感興趣，歡迎隨時透過以下方式與我聯繫：聯絡信箱：[您的 Email 地址]LinkedIn：[您的 LinkedIn 個人檔案連結]個人作品集：[您的 Portfolio / 網站連結]聯絡電話：[您的手機號碼，例如：+886 9XX-XXX-XXX]
   const contactList = [
     {
       title: '聯絡信箱',
