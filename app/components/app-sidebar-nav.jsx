@@ -9,7 +9,8 @@ export default function AppSidebarNav() {
 
   const sidebarList = [
     { title: 'Resume', link: '/' },
-    { title: 'Skills', link: '' },
+    { title: 'Skills', link: '/skills' },
+    // { title: 'Side Projects', link: '/side-projects' },
     { title: 'More About Me', link: '' },
     { title: 'Contact', link: '/contact' }
   ]
