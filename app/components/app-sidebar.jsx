@@ -1,16 +1,10 @@
-import Link from 'next/link'
-import Image from 'next/image';
+import Image from 'next/image'
+
+import AppSidebarNav from '@/app/components/app-sidebar-nav'
 
 export default function AppSidebar() {
-  const sidebarList = [
-    { title: 'Resume', link: '/' },
-    { title: 'Skills', link: '' },
-    { title: 'More About Me', link: '' },
-    { title: 'Contact', link: '' }
-  ]
-
   return (
-    <div className="flex flex-col content-center w-64 px-5 py-10 bg-lime-700/35">
+    <aside className="flex flex-col content-center w-64 px-5 py-10 bg-lime-700/35">
       <Image
         className="rounded-circle object-cover mx-auto mb-4"
         src="/avatar.jpg"
@@ -25,24 +19,7 @@ export default function AppSidebar() {
 
       <hr className="text-lime-100/50 my-4" />
 
-      <nav>
-        <ul>
-          {sidebarList.map(item => ((
-            <Link
-              key={item.title}
-              href={item.link}
-            >
-              <li className='text-base font-medium py-2 px-6 group'>
-                <div
-                  className='group-hover:translate-x-2 group-hover:font-bold animate'
-                >
-                  {item.title}
-                </div>
-              </li>
-            </Link>
-          )))}
-        </ul>
-      </nav>
-    </div>
+      <AppSidebarNav />
+    </aside>
   )
 }
