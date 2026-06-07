@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { FaceSmileIcon } from "@heroicons/react/24/outline"
 
 import AppSidebar from '@/app/components/app-sidebar'
 
@@ -32,8 +33,15 @@ export default function RootLayout({
       <body className="min-h-full flex">
         <AppSidebar />
 
-        <main className="ml-64 flex-grow-1">
+        <main className="lg:block hidden ml-64 flex-grow-1">
           {children}
+        </main>
+
+        <main className="lg:hidden flex ml-64 flex-col flex-grow-1 justify-center items-center w-full min-h-full gap-3 p-5 text-center">
+          <p>
+            請切換至電腦版網頁，以達到最佳瀏覽體驗
+          </p>
+          <FaceSmileIcon className="w-10" />
         </main>
       </body>
     </html>
