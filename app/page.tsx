@@ -162,7 +162,7 @@ export default function Home() {
 
             {
               projectSectionList.map((section) => ((
-                <div>
+                <div key={section.sectionTitle}>
                   <h4 className="text-lg text-amber-700/70 font-bold">{section.sectionTitle}</h4>
                   <ul>{
                     section.projectList.map((item, index) => ((
