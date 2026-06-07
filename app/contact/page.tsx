@@ -7,6 +7,7 @@ import {
 import clsx from 'clsx'
 import Link from 'next/link'
 import BaseDecoTitle from '@/app/components/base-deco-title'
+import BaseCard from '@/app/components/base-card'
 
 export default function ContactPage () {
   const contactList = [
@@ -49,19 +50,14 @@ export default function ContactPage () {
                 <Link
                   target="_blank"
                   href={item.link}
+                  key={item.title}
                 >
-                  <div className="group relative px-4 py-8 w-40 border border-lime-700/50 rounded-2xl" key={item.title}>
-                    <div
-                      className={clsx(
-                        'absolute bg-green-100/70 w-full h-full left-0 top-0 rounded-2xl animate',
-                        'opacity-0 group-hover:opacity-100 group-hover:translate-3'
-                      )}
-                    />
+                  <BaseCard className="w-40">
                     <div className="relative z-1 flex flex-col items-center gap-4">
-                      <LinkIcon className="w-8" />
+                      <LinkIcon className="w-8 text-lime-700/70" />
                       <div className="text-lg">{item.title}</div>
                     </div>
-                  </div>
+                  </BaseCard>
                 </Link>
               )
             })
