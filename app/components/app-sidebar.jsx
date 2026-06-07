@@ -4,10 +4,10 @@ import AppSidebarNav from '@/app/components/app-sidebar-nav'
 
 export default function AppSidebar() {
   return (
-    <aside className="flex flex-col content-center w-64 px-5 py-10 bg-lime-700/35">
+    <aside className="flex flex-col content-center fixed w-64 h-screen px-5 py-10 bg-lime-700/35">
       <Image
         className="rounded-circle object-cover mx-auto mb-4"
-        src="/avatar.jpg"
+        src="/img/avatar.jpg"
         alt="Phoebe Cheng"
         width={150}
         height={150}
