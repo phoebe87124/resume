@@ -11,7 +11,7 @@ export default function AppSidebarNav() {
     { title: 'Resume', link: '/' },
     { title: 'Skills', link: '/skills' },
     // { title: 'Side Projects', link: '/side-projects' },
-    { title: 'More About Me', link: '' },
+    // { title: 'More About Me', link: '' },
     { title: 'Contact', link: '/contact' }
   ]
 
