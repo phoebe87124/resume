@@ -199,7 +199,7 @@ export default function Home() {
             {
               certificateList.map(certificate => {
                 return (
-                  <article className="flex items-center gap-5 even:flex-row-reverse" key={certificate.title}>
+                  <article className="flex items-center gap-5 even:flex-row-reverse" key={certificate.name}>
                     <div className="w-[300px]">
                       <Image
                         src={certificate.img}
