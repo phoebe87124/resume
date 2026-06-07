@@ -112,6 +112,7 @@ export default function Home() {
               src="/img/avatar.jpg"
               width={120}
               height={120}
+              alt="Avatar"
             />
             <div className="text-lg font-bold text-center text-lime-800/75">
               系統設計<br />
@@ -194,7 +195,7 @@ export default function Home() {
 
           <hr className="text-lime-700/15 my-3" />
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-8">
             {
               certificateList.map(certificate => {
                 return (
@@ -204,6 +205,7 @@ export default function Home() {
                         src={certificate.img}
                         width={300}
                         height={150}
+                        alt=""
                       />
                     </div>
                     <div className="flex flex-col gap-1">
